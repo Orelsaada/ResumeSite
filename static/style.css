@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rajdhani&display=swap');
 html {
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ body {
 
 /* Global */
 h3 {
-    color: black;
     margin: 0;
 
 }
@@ -48,6 +47,7 @@ nav {
     
 }
 .dropbtn {
+    position: relative;
     width: 40px;
     height: 40px;
     border: none;
@@ -60,6 +60,23 @@ nav {
     display: none;
 }
 
+.dropdown-content a {
+    display: block;
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
 
 /* Main Section */
 .landing {
@@ -75,12 +92,13 @@ nav {
 }
 
 
-.main-container, .resume-container {
+.main-container, .resume-container, .contact-container {
     text-align: center;
     margin-top: 20vh;
+
 }
 
-#main h1, #resume-main h1 {
+#main h1, #resume-main h1, #contact-main h1 {
     color: white;  
     text-align: center;
     font-size: 50px;
@@ -100,7 +118,23 @@ nav {
     display: inline-block;
 }
 
+/* About */
+#about {
+    background-color:#f0f0f0;
+    padding: 10px;}
+#about h2 {font-family: 'Rajdhani', sans-serif;}
+#about p {font-family: 'Open Sans Condensed', sans-serif;
+font-size: 1.3em;}
+#about a {text-decoration: none;}
 
+#about img {
+    max-width: 50%;
+    height: 187px;
+    border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 /* Resume */
 .resume {
     margin: 0;
@@ -133,6 +167,20 @@ padding-left: 20px;}
     background-position: center;
     background-attachment: fixed;
 }
+.contact h2 {
+    color: white;
+    padding: 10px;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+.contact-container img {
+    width: 50px;
+}
+a.contact {
+    margin-right: 10px;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 1024px) {
