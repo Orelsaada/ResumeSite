@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block home %}
+        <section id="resume-main">
+            <div class="resume-container">
+                    <h1>Resume</h1>
+                    <a href="#resume-local">View Here</a>
+                    <a href="static/images/my-resume.pdf" download="Orel's-Resume">Download Resume</a>
+            </div>
+        </section>
+{% endblock %}
+
+
+{% block content %}
+    <section id="resume-local">
+        <h2><u>Technologies</u></h2>
+        <h3>Web Development</h3>
+        <ul>
+            <li>HTML5 / CSS3</li>
+            <li>Python Flask Framework</li>
+            <li>Version Control (GIT)</li>
+            <li>Heroku</li>
+            <li>Responsive Design</li>
+            <li>Mobile First Approach</li>
+        </ul>
+        <h3>Software Development</h3>
+        <ul>
+            <li>Python</li>
+            <li>Arduino</li>
+            <li>C</li>
+            <li>Assembly</li>
+        </ul>
+        <h3>IT</h3>
+        <ul>
+            <li>Active Directory</li>
+            <li>Virtualization (Hyper-V, VirtualBox, VMware)</li>
+            <li>Servers (DNS, DHCP, Files Server)</li>
+            <li>Scripts (PowerShell)</li>
+            <li>Basic Linux</li>
+            <li>Basic Azure, Office 365, Exchange</li>
+        </ul>
+
+        <hr style="width: 80%">
+        <h2><u>Education</u></h2>
+        <h3>8200 Project <a href="https://www.idf.il/אתרים/אגף-המודיעין/2019/8200-מרשתת-אתכם/" target="_blank">(Click For More Info)</a></h3>
+        <ul>
+            <li>MCSA Course</li>
+            <li>Python Course</li>
+        </ul>
+        <h3>High School Education</h3>
+        <ul>
+            <li>Average Grades of 95</li>
+            <li>5 Points of Math, Physics, English, Computers Systems</li>
+            <li>Technology Diploma - Computers Systems</li>
+            <li>Final Project: Software and Hardware(Robot)</li>
+        </ul>
+
+        <hr style="width: 80%">
+        <h2><u>Languages</u></h2>
+        <ul>
+            <li>Hebrew - Native Language</li>
+            <li>English - Very Good</li>
+        </ul>
+        <hr style="width: 80%">
+    </section>
+{% endblock %}

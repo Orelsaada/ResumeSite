@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Global */
+h3 {
+    color: black;
+    margin: 0;
+
+}
+
+/* Header */
+
+header {
+    min-height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+header .logo {
+    float: left;
+    padding: 20px;
+    
+}
+
+.logo img {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+}
+
+nav {
+    display: none;
+}
+
+.dropdown {
+    float: right;
+    padding: 20px;
+    
+}
+.dropbtn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: -99999px;
+    background: url('images/menu-icon.png');
+    background-size: 100% 100%;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+
+/* Main Section */
+.landing {
+    margin: 0;
+    padding: 0;
+    background: url('images/main-image2.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+
+
+.main-container, .resume-container {
+    text-align: center;
+    margin-top: 160px;
+}
+
+#main h1, #resume-main h1 {
+    color: white;  
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0;
+
+    
+}
+
+#main a, #resume-main a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+/* Resume */
+.resume {
+    margin: 0;
+    padding: 0;
+    background: url('images/resume-image.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#resume-local {
+    background-color: #f0f0f0;
+    padding: 10px;
+
+}
+#resume-local h2 {font-family: 'Rajdhani', sans-serif;}
+#resume-local h3 {font-family: 'Rajdhani', sans-serif;
+padding-left: 20px;}
+#resume-local li {font-family: sans-serif;}
+#resume-local a {text-decoration: none;}
+
+/* Contact */
+.contact {
+    margin: 0;
+    padding: 0;
+    background: url('images/contact-image.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Media Queries */
+
+@media screen and (min-width: 1024px) {
+    .dropdown {
+        display: none;
+    }
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 60px;
+        
+    }
+    nav ul {
+        list-style: none;
+        margin-right: 100px;
+        margin-top: 30px;
+    }
+    nav li {
+        display: inline-block;
+        margin-right: 50px;
+    }
+    nav li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+.landing, .resume, .contact {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0deg);
+    }
+}

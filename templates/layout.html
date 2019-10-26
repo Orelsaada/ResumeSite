@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="shortcut icon" type="image/png" href="static/images/my-icon2.png">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Web Design & Software Developer</title>
+    {% endif %}
+</head>
+<body>
+    {% if not title %}
+    <div class="landing">
+    {% elif title == "Resume" %}
+    <div class="resume">
+    {% elif title == "Contact" %}
+    <div class="contact">
+    {% endif %}
+        <header>
+            <div class="logo">
+                <a href="/home"><img src="static/images/my-icon.png" alt="My Logo"></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/resume">Resume</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </header>
+
+        {% block home %}
+        {% endblock %}
+
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
