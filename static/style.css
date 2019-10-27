@@ -64,10 +64,14 @@ input#menu {
 
 /* Menu Toggle */
 input:checked ~ label {
+    display: block;
+    cursor: pointer;
+    position: relative;
     background: url('images/menu-x.png') no-repeat center;
     background-size: 100% 100%;
     padding: 15px;
     width: 20px;
+    text-indent: -99999px;
 }
 
 input:checked ~ .dropdown-content {
