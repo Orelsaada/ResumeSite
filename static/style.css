@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+
 }
 
 /* Global */
@@ -73,6 +74,8 @@ input:checked ~ label {
     width: 20px;
     text-indent: -99999px;
     z-index: 1;
+    position: fixed;
+    right: 5%;
 }
 
 input:checked ~ .dropdown-content {
@@ -83,13 +86,14 @@ input:checked ~ .dropdown-content {
 .dropdown-content {
     max-height: 0;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     transition: all 1s ease;
     background-color: white;
     height: 100vh;
     width: 100vw;
+    scroll: none;
 
 }
 
