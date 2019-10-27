@@ -67,11 +67,12 @@ input:checked ~ label {
     display: block;
     cursor: pointer;
     position: relative;
-    background: url('images/menu-x.png') no-repeat center;
+    background: url('images/menu-close.png') no-repeat center;
     background-size: 100% 100%;
     padding: 15px;
     width: 20px;
     text-indent: -99999px;
+    z-index: 1;
 }
 
 input:checked ~ .dropdown-content {
@@ -84,18 +85,25 @@ input:checked ~ .dropdown-content {
     overflow: hidden;
     position: absolute;
     left: 0;
+    top: 0;
     transition: all 1s ease;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+
 }
 
 .dropdown-content a {
     display: block;
-    width: 100vw;
+    width: 60vw;
+    padding-left: 20vw;
     background-color: white;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     font-size: 25px;
     padding-top: 3vh;
     padding-bottom: 3vh;
+    color: black;
 }
 
 
