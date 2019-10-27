@@ -103,6 +103,7 @@ input:checked ~ .dropdown-content {
     font-size: 25px;
     padding-top: 3vh;
     padding-bottom: 3vh;
+    margin-top: 5px;
     color: black;
 }
 
