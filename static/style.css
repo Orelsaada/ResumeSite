@@ -72,7 +72,7 @@ input:checked ~ label {
     padding: 15px;
     width: 20px;
     text-indent: -99999px;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     right: 5%;
 }
@@ -92,8 +92,7 @@ input:checked ~ .dropdown-content {
     background-color: white;
     height: 100vh;
     width: 100vw;
-    scroll: none;
-
+    z-index: 1;
 }
 
 .dropdown-content a {
@@ -108,8 +107,13 @@ input:checked ~ .dropdown-content {
     padding-bottom: 3vh;
     margin-top: 5px;
     color: black;
+
 }
 
+.hr-menu {
+    width: 75%;
+    float: left;
+}
 
 /* Main Section */
 .landing {
